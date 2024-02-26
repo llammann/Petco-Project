@@ -1,0 +1,40 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: rgb(89, 51, 51);
+  border-radius: 8px;
+  padding: 100px !important;
+  width: 70%;
+  height: 80%;
+  // margin-top: 90px;
+
+ .cancelTeam {
+  width: 100%;
+  text-align: end;
+  button {
+    background-color: transparent;
+    border: none;
+
+    .cancel {
+      font-size: 30px;
+      color: rgb(50, 15, 15);
+    }
+  }
+ }
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,380 @@
+footer {
+    width: 100%;
+    background-image: url("./../images//counter_bg.jpg");
+
+    .vawe {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape01.png");
+        height: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 999;
+        background-color: #F5F2EB;
+    }
+
+    .container {
+        padding: 100px 0;
+        color: #6F6E6E;
+        width: 1200px;
+        margin: auto;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding-bottom: 0;
+
+        .left {
+            width: 30%;
+            font-size: 18px;
+            line-height: 26px;
+
+            .imgWrapper {
+                padding-bottom: 30px;
+                cursor: pointer;
+            }
+
+            p {
+                padding-bottom: 30px;
+                width: 80%;
+            }
+
+            .call {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                width: 65%;
+                cursor: pointer;
+
+                .icon {
+                    padding: 8px 10px;
+                    background-color: orangered;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 25px;
+                    color: white;
+                }
+
+                div {
+                    span {
+                        font-size: 24px;
+                        line-height: 1;
+                        margin-bottom: 4px;
+                        font-weight: 800;
+                        color: #0A303A;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        color: #f04336;
+                        font-weight: 900;
+                        font-family: 'Nunito', sans-serif;
+
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .contacts {
+                color: #0A303A;
+                width: 40%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+
+        .details {
+            width: 45%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .left,
+            .right {
+                width: 50%;
+
+                span {
+                    font-size: 25px;
+                    color: #0A303A;
+                    font-weight: 800;
+                    line-height: 1;
+                    margin-bottom: 25px;
+                    display: block;
+                    cursor: pointer;
+                    transition-duration: 0.5s;
+
+                    &:hover {
+                        color: orangered;
+                        transition-duration: 0.5s;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #A58A7B;
+
+                    :hover {
+                        color: orangered;
+                        transition-duration: 0.5s;
+                    }
+
+                    p {
+                        padding: 6px;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 25%;
+
+            display: flex;
+            justify-content: end;
+
+            .conRight {
+                width: fit-content;
+                height: 177px;
+
+
+
+                span {
+                    font-size: 25px;
+                    color: #0A303A;
+                    font-weight: 800;
+                    line-height: 1;
+                    margin-bottom: 38px;
+                    display: block;
+                    cursor: pointer;
+                    transition-duration: 0.5s;
+
+                    &:hover {
+                        color: orangered;
+                        transition-duration: 0.5s;
+                    }
+                }
+
+
+                .wrapper {
+                    width: 250px;
+                    height: 177px;
+                    display: flex;
+                    column-gap: 5%;
+                    flex-wrap: wrap;
+
+                    span {
+                        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img01.png") !important;
+                        background-size: cover;
+                        display: block !important;
+                        width: 30%;
+                        margin: 0;
+                        height: 76.25px;
+                        cursor: pointer;
+                    }
+
+                    .second {
+                        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img02.png") !important;
+                    }
+
+                    .third {
+                        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img03.png") !important;
+                    }
+
+                    .fourth {
+                        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img04.png") !important;
+                    }
+
+                    .fifth {
+                        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img05.png") !important;
+                    }
+
+                    .sixth {
+                        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img06.png") !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .doggos {
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .vawe2 {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/copyright_shape.png");
+        height: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 999;
+        background-color: #F5F2EB;
+    }
+
+    .copy {
+        width: 100%;
+        background-color: #0A303A;
+
+        .container {
+            width: 1200px;
+            margin: auto;
+            padding: 25px;
+
+            p {
+                color: #d5d5d5;
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+
+            .language {
+                select {
+                    font-size: 15px;
+                    width: 120px;
+                    padding: 8px 18px !important;
+                    background-color: orangered;
+                    border-radius: 4px;
+
+                    .opt {
+                        padding: 14px 6px !important;
+                        color: black;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    footer {
+        .container {
+            width: 100% !important;
+            // flex-direction: column;
+
+            .left {
+                // width: 100%;
+                padding-bottom: 50px;
+
+                .call {
+                    flex-direction: column;
+
+                    span {
+                        padding: 3px 7px !important;
+
+                        .head {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .nomer {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+
+            .details {
+                width: 100%;
+            }
+        }
+
+        .copy {
+            .container {
+                width: 100%;
+            }
+        }
+
+        .doggos {
+            width: 100%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1170px) {
+    footer {
+        .container {
+            width: 100% !important;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .left {
+                width: 80%;
+                padding-bottom: 50px;
+
+
+                .call {
+                    flex-direction: row;
+                    width: 150px;
+                    padding-bottom: 10px;
+
+                    span {
+                        padding: 3px 7px !important;
+
+                        .head {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .nomer {
+                        font-size: 15px !important;
+                    }
+
+                    p {
+                        padding: 10px;
+                        display: none;
+                    }
+                }
+
+                .contacts {
+                    width: 100px;
+                }
+            }
+
+            .details {
+                width: 80%;
+                text-align: start;
+
+                span {
+                    text-align: start;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .copy {
+            .container {
+                width: 80%;
+                align-items: start;
+
+                p {
+                    font-size: 15px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer .doggos {
+
+        display: none;
+    }
+
+    footer .vawe2 {
+        width: 100%;
+        margin-top: 80px;
+    }
+}

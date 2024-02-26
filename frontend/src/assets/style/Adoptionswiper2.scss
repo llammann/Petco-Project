@@ -1,0 +1,183 @@
+.adoptswip2 {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgb(255, 255, 255);
+
+    // background-color: purple;
+
+    // .swiper {
+    //     width: 100%;
+    //     height: 80vh;
+    //     background-color: blue !important;
+    // }
+    // background-color: rgb(111, 206, 244) !important;
+
+    .swiper-wrapper {
+        // height: 100% !important;
+        width: 100% !important;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+
+        // background-color: rgb(160, 244, 111) !important;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/icon/arrow.png");
+        width: 50px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain; // Adjusted background-size
+        background-position: center; // Center the arrow
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        padding: 20px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .swiper-button-prev {
+        transform: scaleX(-1);
+
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 00px;
+        // color: orangered;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        // font-size: 18px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px !important;
+        background-color: rgb(255, 255, 255) !important;
+
+        height: 100% !important;
+
+        padding: 15px;
+
+        a {
+            text-decoration: none;
+
+            .dog {
+                width: 100%;
+                position: relative;
+
+                .imgWrapper {
+                    margin-bottom: 23px !important;
+                    width: 270px;
+                    height: 270px !important;
+                    border-radius: 50%;
+                    margin: auto;
+                    border-radius: 50% !important;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .price {
+                        padding: 5px 13px;
+                        background-color: #f04336;
+                        width: fit-content;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 8px;
+                        top: 11px;
+                        z-index: 998;
+
+                        span {
+                            color: #fff;
+                            line-height: 45px;
+                            border-radius: 50%;
+                            font-size: 14px;
+                            font-family: 'Nunito', sans-serif;
+                            font-weight: 800;
+                        }
+
+                        .numb {
+                            padding: 15px 7px;
+                        }
+                    }
+                }
+
+                .detail {
+                    text-align: center;
+
+                    .birth {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 70%;
+                        margin: auto;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #676666;
+                        margin-bottom: 9px;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .calendar {
+                            color: orangered;
+                            font-size: 13px;
+                            margin-right: 4px;
+                        }
+                    }
+
+                    h1 {
+                        font-size: 25px;
+                        font-weight: 800;
+                        margin-bottom: 9px;
+                        color: #0A303A;
+                        margin: auto;
+                        width: fit-content;
+                    }
+
+                    .info {
+                        font-size: 16px;
+                        line-height: 26px;
+                        padding-bottom: 17px;
+                        font-weight: 400;
+                        color: #676666;
+                        margin: auto;
+                        text-align: center;
+                        height: 47px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    .readMore {
+                        margin-top: 20px !important;
+                        color: #f04336;
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 18px;
+                        font-weight: 800;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+
+                        img {
+                            width: 22px;
+                            height: 20px;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    object-fit: cover;
+}

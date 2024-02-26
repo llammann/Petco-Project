@@ -1,0 +1,191 @@
+.Dog_detail {
+    width: 100%;
+    padding: 70px 0;
+    margin-bottom: 100px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #F4F1EA;
+
+    .container {
+        width: 1100px;
+        padding-top: 40px;
+        border-radius: 10px;
+        margin: auto;
+        background-color: #F4F1EA;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .imgWrapper {
+            width: 40%;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 400px;
+            cursor: grab;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    height: auto;
+                    transition-duration: 1s;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            button {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 25px;
+                border-radius: 6px;
+                font-size: 16px;
+                border: none;
+                background-color: orangered;
+                color: white;
+                font-weight: 700;
+                letter-spacing: 1px;
+                transition-duration: 1s;
+cursor: pointer;
+                &:hover {
+                    background-color: black;
+                    transition-duration: 1s;
+                    color: orangered;
+                }
+            }
+        }
+
+        .articles {
+            border: 3px solid orangered;
+            border-left: none;
+            width: 60%;
+            // height: 400px;
+            margin-left: 40px;
+            border-radius: 10px;
+            padding: 30px 30px 30px 0;
+
+            h1 {
+                color: orangered;
+                font-weight: 800;
+                font-size: 45px;
+                padding-bottom: 15px;
+                animation: colorAnimation 1s infinite alternate;
+                cursor: pointer;
+            }
+
+            @keyframes colorAnimation {
+                0% {
+                    color: orangered;
+                }
+
+                100% {
+                    color: black;
+                }
+            }
+
+
+
+            p {
+                color: rgb(47, 45, 45);
+
+                span {
+                    color: rgb(94, 34, 13);
+                    font-size: 19px;
+                }
+            }
+
+            .four {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .breedBirth,
+                .genderSize {
+                    padding-bottom: 5px;
+
+                    :first-child {
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+
+            h3 {
+                padding-bottom: 20px;
+                color: rgb(71, 68, 68);
+            }
+
+            .price {
+                padding-top: 30px;
+                display: flex;
+                justify-content: end;
+cursor: copy;
+                span,
+                h5 {
+                    color: orangered;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+
+                h5 {
+                    color: black;
+                }
+
+            }
+        }
+    }
+
+    .back {
+        width: 1100px;
+        margin: auto;
+cursor: pointer;
+        .home {
+            color: red;
+            font-size: 45px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Dog_detail .container {
+        width: 96% !important;
+    }
+
+    .Dog_detail .back {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Dog_detail .container {
+        width: 100% !important;
+        flex-direction: column;
+
+        .imgWrapper {
+            width: 96%;
+            margin: auto;
+        }
+
+        .articles {
+            width: 96%;
+            margin: auto;
+            border: none;
+            border-left: 2px solid orangered;
+            border-bottom: 2px solid orangered;
+            padding: 30px;
+            margin: 0 !important;
+            margin-top: 20px!important;
+        }
+    }
+
+    .Dog_detail .back {
+        width: 100%;
+    }
+}

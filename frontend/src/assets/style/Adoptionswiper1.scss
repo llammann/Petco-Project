@@ -1,0 +1,108 @@
+.adoptswip1 {
+    width: 100% !important;
+    height: 100% !important;
+    //     // background-color: purple;
+
+    .mySwip {
+        width: 100% !important;
+        height: 100% !important;
+        // background-color: blue !important;
+    }
+
+    .swiper-wrapper {
+        height: 100% !important;
+        padding: 0;
+        // background-color: red !important;
+        width: 100% !important;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-slide {
+        width: 100% !important;
+        height: 100% !important;
+        /* Center slide text vertically */
+
+        // padding: 100% 100%;
+        // background-color: yellow !important;
+    }
+
+
+    .swiper-slide.first,
+    .swiper-slide.seconddd,
+    .swiper-slide.third,
+    .swiper-slide.fourth,
+    .swiper-slide.fifth {
+        background-image: url("	https://themebeyond.com/pre/petco-prev/petco-live/img/images/breed_services_img01.jpg");
+        background-repeat: no-repeat;
+        border-radius: 6px;
+        display: flex;
+        align-items: end;
+        background-size: cover;
+        background-position: center;
+
+        span {
+            margin-bottom: 30px;
+            color: orangered;
+            background-color: white;
+            padding: 6px 15px;
+            font-size: 25px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+
+    .swiper-slide.seconddd {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breeder_img03.jpg") !important;
+    }
+
+    .swiper-slide.third {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breeder_img04.jpg") !important;
+    }
+
+    .swiper-slide.fourth {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breeder_img05.jpg") !important;
+    }
+
+    .swiper-slide.fifth {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breeder_img02.jpg") !important;
+    }
+
+    .swiper-slide.first {
+        background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breeder_img01.jpg") !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .home1 .swiper-slide .page1 .container .detail h1 {
+        font-size: 30px !important;
+    }
+
+    .home1 .swiper-slide .page1 .container .detail p {
+        font-size: 18px !important;
+    }
+
+    .home1 .swiper-slide div {
+        padding: 50px 10px;
+    }
+
+    .swiper-slide .page2 .container .detail h1 {
+        font-size: 25px !important;
+    }
+
+    .swiper-slide .page2 .container .detail p {
+        font-size: 13px !important;
+    }
+
+    .home2 .swiper-slide div {
+        padding: 50px 10px;
+    }
+}

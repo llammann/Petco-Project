@@ -1,0 +1,181 @@
+footer {
+  width: 100%;
+  background-image: url("./../images//counter_bg.jpg");
+}
+footer .vawe {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape01.png");
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #F5F2EB;
+}
+footer .container {
+  padding: 100px 0;
+  color: #6F6E6E;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+footer .container .left {
+  width: 30%;
+  font-size: 18px;
+  line-height: 26px;
+}
+footer .container .left .imgWrapper {
+  padding-bottom: 30px;
+}
+footer .container .left p {
+  padding-bottom: 30px;
+  width: 80%;
+}
+footer .container .left .call {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 65%;
+}
+footer .container .left .call .icon {
+  padding: 8px 10px;
+  background-color: orangered;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+footer .container .left .call div span {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 4px;
+  font-weight: 800;
+  color: #0A303A;
+}
+footer .container .left .call div p {
+  font-size: 12px;
+  color: #f04336;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+}
+footer .container .left .contacts {
+  color: #0A303A;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 0;
+}
+footer .container .details {
+  width: 45%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .container .details .left,
+footer .container .details .right {
+  width: 50%;
+}
+footer .container .details .left span,
+footer .container .details .right span {
+  font-size: 25px;
+  color: #0A303A;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 25px;
+  display: block;
+}
+footer .container .details .left p,
+footer .container .details .right p {
+  padding: 6px;
+}
+footer .container .right {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
+footer .container .right .conRight {
+  width: fit-content;
+  height: 177px;
+}
+footer .container .right .conRight span {
+  font-size: 25px;
+  color: #0A303A;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 38px;
+  display: block;
+}
+footer .container .right .conRight .wrapper {
+  width: 250px;
+  height: 177px;
+  display: flex;
+  column-gap: 5%;
+  flex-wrap: wrap;
+}
+footer .container .right .conRight .wrapper span {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img01.png") !important;
+  background-size: cover;
+  display: block !important;
+  width: 30%;
+  margin: 0;
+  height: 76.25px;
+}
+footer .container .right .conRight .wrapper .second {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img02.png") !important;
+}
+footer .container .right .conRight .wrapper .third {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img03.png") !important;
+}
+footer .container .right .conRight .wrapper .fourth {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img04.png") !important;
+}
+footer .container .right .conRight .wrapper .fifth {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img05.png") !important;
+}
+footer .container .right .conRight .wrapper .sixth {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/insta_img06.png") !important;
+}
+footer .doggos {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 30px;
+}
+footer .vawe2 {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/copyright_shape.png");
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #F5F2EB;
+}
+footer .copy {
+  width: 100%;
+  background-color: #0A303A;
+}
+footer .copy .container {
+  width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+footer .copy .container p {
+  color: #d5d5d5;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+footer .copy .container .language select {
+  font-size: 15px;
+  width: 120px;
+  padding: 8px 18px !important;
+  background-color: orangered;
+  border-radius: 4px;
+}
+footer .copy .container .language select .opt {
+  padding: 14px 6px !important;
+  color: black;
+  height: 30px;
+}/*# sourceMappingURL=Footer.css.map */

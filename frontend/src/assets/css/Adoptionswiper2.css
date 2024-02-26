@@ -1,0 +1,141 @@
+.adoptswip2 {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: purple;
+  background-color: rgb(111, 206, 244) !important;
+  object-fit: cover;
+}
+.adoptswip2 .swiper-wrapper {
+  width: 100% !important;
+  padding: 0;
+  background-color: rgb(160, 244, 111) !important;
+}
+.adoptswip2 .swiper-button-next,
+.adoptswip2 .swiper-button-prev {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/icon/arrow.png");
+  width: 50px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  background-color: white;
+  padding: 20px 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.adoptswip2 .swiper-button-prev {
+  transform: scaleX(-1);
+}
+.adoptswip2 .swiper-button-prev:after,
+.adoptswip2 .swiper-button-next:after {
+  font-size: 0px;
+}
+.adoptswip2 .swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px !important;
+  height: 100% !important;
+  padding: 15px;
+}
+.adoptswip2 .swiper-slide .dog {
+  width: 100%;
+  position: relative;
+}
+.adoptswip2 .swiper-slide .dog .imgWrapper {
+  margin-bottom: 23px !important;
+  width: 270px;
+  height: 270px !important;
+  border-radius: 50%;
+  margin: auto;
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+.adoptswip2 .swiper-slide .dog .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.adoptswip2 .swiper-slide .dog .imgWrapper .price {
+  padding: 5px 13px;
+  background-color: #f04336;
+  width: fit-content;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 11px;
+  z-index: 998;
+}
+.adoptswip2 .swiper-slide .dog .imgWrapper .price span {
+  color: #fff;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+.adoptswip2 .swiper-slide .dog .imgWrapper .price .numb {
+  padding: 15px 7px;
+}
+.adoptswip2 .swiper-slide .dog .detail {
+  text-align: center;
+}
+.adoptswip2 .swiper-slide .dog .detail .birth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 500;
+  color: #676666;
+  margin-bottom: 9px;
+}
+.adoptswip2 .swiper-slide .dog .detail .birth p {
+  margin: 0;
+}
+.adoptswip2 .swiper-slide .dog .detail .birth .calendar {
+  color: orangered;
+  font-size: 13px;
+  margin-right: 4px;
+}
+.adoptswip2 .swiper-slide .dog .detail h1 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 9px;
+  color: #0A303A;
+  margin: auto;
+  width: fit-content;
+}
+.adoptswip2 .swiper-slide .dog .detail .info {
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 17px;
+  font-weight: 400;
+  color: #676666;
+  margin: auto;
+  text-align: center;
+  height: 47px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.adoptswip2 .swiper-slide .dog .detail .readMore {
+  margin-top: 20px !important;
+  color: #f04336;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.adoptswip2 .swiper-slide .dog .detail .readMore img {
+  width: 22px;
+  height: 20px;
+  margin-left: 6px;
+}/*# sourceMappingURL=Adoptionswiper2.css.map */

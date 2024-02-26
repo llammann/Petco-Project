@@ -1,0 +1,239 @@
+// #app {
+//     height: 100%;
+//   }
+//   html,
+//   body {
+//     position: relative;
+//     height: 100%;
+//   }
+
+//   body {
+//     background: #eee;
+//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     color: #000;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+.home1 {
+    width: 100%;
+    // height: 100vh;
+
+
+    .swiper-slide {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+
+        text-align: start !important;
+
+        div {
+            padding: 100px 0;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .page1,
+        .page2 {
+            width: 100%;
+            // height: 100vh;
+
+            .container {
+                width: 1200px;
+                height: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                color: white;
+
+
+
+                .pawty {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    animation: waveAnimation 2s infinite;
+                    left: 550px;
+                    top: -150px;
+                    width: 42px;
+
+                    img {
+                        width: 100%;
+                        height: 40px;
+                    }
+
+                }
+
+                .detail {
+                    width: 100%;
+                    position: relative;
+                    padding: 0;
+                    // background-color: red;
+
+                    h1 {
+                        animation: slide-up 1.5s infinite;
+                        font-weight: 900;
+                        font-size: 60px;
+                        width: 50%;
+                        padding-bottom: 30px;
+
+                        span {
+                            padding: 2px 12px;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 30px;
+                            border-bottom-right-radius: 30px;
+                            background-color: orangered;
+                        }
+                    }
+
+                    p {
+                        animation: slide-up 2s infinite;
+                        font-size: 20px;
+                        padding-bottom: 30px;
+                        width: 50%;
+                        font-weight: 700;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        button {
+                            animation: slide-up 2s infinite;
+                            padding: 14px;
+                            background-color: orangered;
+                            border: none;
+                            border-radius: 4px;
+                            font-size: 25px;
+                            color: white;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            transition: background-color 0.5s ease;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            &:hover {
+                                background-color: black;
+                            }
+
+                            img {
+                                margin-left: 10px;
+                            }
+
+                        }
+                    }
+                }
+
+                @keyframes waveAnimation {
+                    0% {
+                        transform: rotate(20deg);
+                        transition-duration: 0.6s;
+
+                    }
+
+
+                    50% {
+                        transform: rotate(10);
+                        transition-duration: 0.6s;
+                    }
+
+                    100% {
+                        transform: rotate(0);
+                        transition-duration: 0.6s;
+                    }
+                }
+
+                @keyframes slide-up {
+                    0% {
+                        transform: translateY(20%);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+
+                .text-animation {
+                    overflow: hidden;
+                    /* Ensure the text doesn't overflow */
+                    position: relative;
+                }
+
+                .text-animation::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    /* Adjust this height as needed */
+                    background-color: blue;
+                    /* Adjust the color as needed */
+                    animation: slide-up 0.5s ease-out forwards;
+                }
+
+
+                .text-animation {
+                    position: relative;
+                }
+
+                .text-animation::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    /* Adjust this height as needed */
+                    background-color: blue;
+                    /* Adjust the color as needed */
+                    animation: slide-up 1.5s ease-out forwards;
+                }
+
+
+                .text-animation {
+                    animation: slide-up 1.5s ease-out forwards;
+                }
+            }
+        }
+
+
+    }
+
+
+    .swiper-slide .page2 {
+        background-image: url("./../images/slider_bg02.jpg") !important;
+        // background-color: red;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide .page1 {
+        background-image: url("./../images/slider_bg01.jpg") !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home1 .swiper-slide .page1 .container {
+        width: 100%;
+    }
+}

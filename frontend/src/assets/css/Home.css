@@ -1,0 +1,1082 @@
+.sticky {
+  background-color: orangered;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #000000;
+  position: fixed;
+  right: 60px;
+  z-index: 999;
+  border-radius: 8px;
+  bottom: 60px;
+}
+
+.bestFriend {
+  width: 100%;
+}
+
+.bestService {
+  width: 100%;
+  background-image: url("./../images/counter_bg.jpg");
+  background-size: cover;
+  padding: 30px 0 30px 0;
+}
+.bestService .container {
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.bestService .container .options {
+  z-index: 998 !important;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  position: absolute;
+  top: -80px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 156px;
+}
+.bestService .container .options .city {
+  width: 25%;
+}
+.bestService .container .options .city .detail {
+  padding: 63px 39px 63px 30px;
+  color: white;
+  background-color: #0A303A;
+  height: 100%;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.bestService .container .options .city .detail span {
+  padding-left: 3px;
+}
+.bestService .container .options .city .detail .icon {
+  font-size: 30px;
+}
+.bestService .container .options .dog,
+.bestService .container .options .bird,
+.bestService .container .options .cat,
+.bestService .container .options .others {
+  padding: 63px 39px 63px 30px;
+  color: white;
+  background-color: orangered;
+  font-size: 16px;
+  width: 18.75%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.bestService .container .options .dog span,
+.bestService .container .options .bird span,
+.bestService .container .options .cat span,
+.bestService .container .options .others span {
+  padding-left: 6px;
+}
+.bestService .container .options .dog .icon,
+.bestService .container .options .bird .icon,
+.bestService .container .options .cat .icon,
+.bestService .container .options .others .icon {
+  font-size: 30px;
+}
+.bestService .container .options .bird {
+  background-image: url("./../images//breed_services_bg.jpg");
+  background-size: cover;
+}
+.bestService .container .options .others {
+  background-color: #0A303A;
+  padding: 56px 35px;
+}
+.bestService .container .options .others #pets {
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 20px;
+}
+.bestService .container .options .others #pets .opt {
+  color: black;
+}
+.bestService .container .options .dog,
+.bestService .container .options .cat {
+  border-right: 1px solid gray;
+}
+.bestService .container .wrapper {
+  width: 100%;
+  padding: 180px 0;
+}
+.bestService .container .wrapper span {
+  font-size: 24px;
+  padding-bottom: 16px;
+  color: orangered;
+  display: block;
+  font-weight: 800;
+}
+.bestService .container .wrapper .best {
+  font-size: 40px;
+  color: #0A303A;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 50px;
+  font-weight: 900;
+}
+.bestService .container .wrapper .scores {
+  width: 100%;
+}
+.bestService .container .wrapper .scores .percentage,
+.bestService .container .wrapper .scores .dogs,
+.bestService .container .wrapper .scores .breeding,
+.bestService .container .wrapper .scores .history {
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bestService .container .wrapper .scores .percentage span,
+.bestService .container .wrapper .scores .dogs span,
+.bestService .container .wrapper .scores .breeding span,
+.bestService .container .wrapper .scores .history span {
+  color: #0A303A;
+  font-size: 60px;
+  font-weight: 900;
+}
+.bestService .container .wrapper .scores .percentage span:hover,
+.bestService .container .wrapper .scores .dogs span:hover,
+.bestService .container .wrapper .scores .breeding span:hover,
+.bestService .container .wrapper .scores .history span:hover {
+  color: orangered;
+  transition-duration: 0.4s;
+}
+.bestService .container .wrapper .scores .percentage p,
+.bestService .container .wrapper .scores .dogs p,
+.bestService .container .wrapper .scores .breeding p,
+.bestService .container .wrapper .scores .history p {
+  font-size: 14px !important;
+  font-weight: 800;
+  color: #818181;
+}
+
+.adoptionFree {
+  width: 100%;
+}
+.adoptionFree .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  padding-bottom: 80px;
+}
+.adoptionFree .container .left {
+  width: 40%;
+  padding: 0 20px;
+}
+.adoptionFree .container .left img {
+  padding-left: 100px;
+}
+.adoptionFree .container .left h1 {
+  font-size: 50px;
+  width: 97%;
+  padding-bottom: 15px;
+  font-weight: 900;
+}
+.adoptionFree .container .left h1 span {
+  color: orangered;
+}
+.adoptionFree .container .left p {
+  color: rgb(106, 102, 102);
+}
+.adoptionFree .container .left a {
+  text-decoration: none;
+}
+.adoptionFree .container .left a button {
+  padding: 18px 25px;
+  background-color: orangered;
+  border-radius: 4px;
+  border: none;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s ease;
+}
+.adoptionFree .container .left a button img {
+  height: 20px;
+  width: 20%;
+  padding: 0;
+}
+.adoptionFree .container .left a button span {
+  font-size: 20px;
+  color: white;
+}
+.adoptionFree .container .left a button:hover {
+  background-color: black;
+}
+.adoptionFree .container .left a button span {
+  padding-right: 8px;
+}
+.adoptionFree .container .imgWrapper {
+  width: 50%;
+  height: 550px;
+  overflow: hidden;
+  nav-index: 900;
+  position: absolute;
+  right: 27px;
+  top: -60px;
+}
+.adoptionFree .container .imgWrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 550px;
+}
+
+.popularDogs {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.popularDogs .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popularDogs .header .imgWrapper {
+  width: 330px;
+  height: 400px;
+}
+.popularDogs .header .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popularDogs .header .head {
+  text-align: center;
+}
+.popularDogs .header .head .paw {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  transform: translateX(-50%);
+  animation: waveAnimation 2s infinite;
+}
+.popularDogs .header .head .paw img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  20% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transition-duration: 0.6s;
+  }
+  60% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  80% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transition-duration: 0.6s;
+  }
+}
+.popularDogs .header .head span {
+  padding-top: 6px;
+  display: block;
+  font-size: 30px;
+  color: orangered;
+}
+.popularDogs .header .head h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.popularDogs .header .head p {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  color: gray;
+}
+.popularDogs .container {
+  width: 1200px;
+  margin: auto;
+  height: 420px;
+  display: flex;
+  align-items: center;
+}
+.popularDogs .container .swiper {
+  width: 100%;
+  height: 100%;
+}
+.popularDogs .container .available {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding: 40px;
+  background-image: url("./../images//breed_services_bg.jpg");
+  background-size: cover;
+  color: white;
+  margin-left: 30px;
+  height: 100%;
+  width: 50%;
+}
+.popularDogs .container .available .breeder {
+  font-size: 20px;
+  border-left: 2px solid white;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: block;
+  padding-left: 10px;
+}
+.popularDogs .container .available h1 {
+  font-size: 40px;
+  padding-bottom: 18px;
+}
+.popularDogs .container .available p {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+.popularDogs .container .available a {
+  text-decoration: none;
+}
+.popularDogs .container .available a button {
+  padding: 18px 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s ease;
+  width: 198px;
+}
+.popularDogs .container .available a button img {
+  height: 20px;
+  width: 20%;
+  padding: 0;
+}
+.popularDogs .container .available a button span {
+  font-size: 25px;
+  color: orangered;
+}
+.popularDogs .container .available a button:hover {
+  background-color: black;
+}
+
+.vawe {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #D5E6EB;
+  height: 30px;
+}
+
+.questionAndHistory {
+  background-color: #D5E6EB;
+  padding: 250px 0;
+  width: 100%;
+  padding-bottom: 0;
+}
+.questionAndHistory .dog {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
+  margin: auto;
+}
+.questionAndHistory .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+}
+.questionAndHistory .container .left {
+  width: 50%;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+}
+.questionAndHistory .container .left .family {
+  width: 470px;
+  height: 380px;
+}
+.questionAndHistory .container .left .tv {
+  position: absolute;
+  bottom: 0;
+}
+.questionAndHistory .container .right {
+  width: 50%;
+}
+.questionAndHistory .container .right span {
+  color: orangered;
+  font-size: 20px;
+  padding-bottom: 15px;
+  display: block;
+}
+.questionAndHistory .container .right h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.questionAndHistory .container .right .accordions {
+  width: 100%;
+}
+.questionAndHistory .container .right .accordions .css-1m4ljmh-MuiTypography-root {
+  width: 100%;
+  font-size: 20px;
+}
+.questionAndHistory .container .right .accordions .css-1c35hjw-MuiPaper-root-MuiAccordion-root:first-of-type,
+.questionAndHistory .container .right .accordions .css-1c35hjw-MuiPaper-root-MuiAccordion-root {
+  margin-bottom: 17px;
+  padding: 8px 11px;
+  border: none;
+  border-radius: 6px;
+}
+
+.vawysecond {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/faq_bg_shape02.png");
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #D5E6EB;
+}
+
+.figures {
+  background-color: #181A21;
+}
+.figures .container {
+  width: 1000px;
+  margin: auto;
+}
+
+.meetAnimals {
+  padding-bottom: 250px;
+}
+.meetAnimals .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meetAnimals .header .imgWrapper {
+  width: 330px;
+  height: 400px;
+}
+.meetAnimals .header .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.meetAnimals .header .head {
+  text-align: center;
+}
+.meetAnimals .header .head .paw {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  transform: translateX(-50%);
+  animation: waveAnimation 2s infinite;
+}
+.meetAnimals .header .head .paw img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  20% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transition-duration: 0.6s;
+  }
+  60% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  80% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transition-duration: 0.6s;
+  }
+}
+.meetAnimals .header .head span {
+  padding-top: 6px;
+  display: block;
+  font-size: 30px;
+  color: orangered;
+}
+.meetAnimals .header .head h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.meetAnimals .header .head p {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  color: gray;
+}
+.meetAnimals .animals .container {
+  width: 1200px;
+  margin: auto;
+}
+.meetAnimals .animals .container .grid {
+  row-gap: 180px;
+}
+.meetAnimals .animals .container .grid .card {
+  width: 100%;
+  position: relative;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper img {
+  width: 100%;
+  object-fit: cover;
+  transition-duration: 0.8s;
+  height: 100%;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper .adoption {
+  display: none;
+  animation: titleAnimation 3s ease;
+  transition-duration: 1s;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover img {
+  opacity: 0.6;
+  transition-duration: 1s;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption {
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  transition-duration: 1s;
+  display: block;
+  position: absolute;
+  top: 150px;
+  margin: auto;
+  padding: 14px;
+  background-color: orangered;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.8s ease;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption img {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption:hover {
+  background-color: black;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption span {
+  padding-right: 8px;
+}
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+.meetAnimals .animals .container .grid .card .details {
+  position: absolute;
+  bottom: -35%;
+  right: 5%;
+  width: 90%;
+  margin: auto;
+  padding: 35px 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.meetAnimals .animals .container .grid .card .details .name {
+  padding-bottom: 15px;
+  margin: auto;
+  display: block;
+  color: orangered;
+  font-size: 22px;
+  width: fit-content;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #676666;
+  padding-bottom: 15px;
+  color: #676666;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left .icon,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right .icon {
+  font-size: 20px;
+  padding-right: 4px;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left .icon2,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right .icon2 {
+  font-size: 17px;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left span,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right span {
+  font-size: 20px;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice .icons {
+  color: rgb(205, 184, 50);
+  font-size: 20px;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice .total {
+  font-size: 20px;
+  color: #676666;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice .total p span {
+  color: #0A303A;
+}
+
+.vawythird {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape01.png");
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #F5F2EB;
+}
+
+.happyCustomers {
+  width: 100%;
+  background-image: url("./../images//counter_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.happyCustomers .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.happyCustomers .header .imgWrapper {
+  width: 330px;
+  height: 400px;
+}
+.happyCustomers .header .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.happyCustomers .header .head {
+  text-align: center;
+}
+.happyCustomers .header .head .paw {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  transform: translateX(-50%);
+  animation: waveAnimation 2s infinite;
+}
+.happyCustomers .header .head .paw img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  20% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transition-duration: 0.6s;
+  }
+  60% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  80% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transition-duration: 0.6s;
+  }
+}
+.happyCustomers .header .head span {
+  padding-top: 6px;
+  display: block;
+  font-size: 30px;
+  color: orangered;
+}
+.happyCustomers .header .head h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.happyCustomers .header .head p {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  color: gray;
+}
+.happyCustomers .containerr {
+  width: 1200px;
+  margin: auto;
+  background-color: 0;
+  padding-bottom: 120px;
+}
+
+.subscribe {
+  width: 100%;
+  padding: 150px 0;
+}
+.subscribe .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe .container .wrapper {
+  width: 100%;
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/newsletter_bg.jpg");
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border: 1px solid black;
+  margin: 0;
+}
+.subscribe .container .wrapper .left {
+  padding-right: 10px;
+}
+.subscribe .container .wrapper .left h1 {
+  font-size: 32px;
+  color: white;
+  padding-bottom: 15px;
+}
+.subscribe .container .wrapper .left div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.subscribe .container .wrapper .left div .icon {
+  padding-right: 4px;
+}
+.subscribe .container .wrapper .right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe .container .wrapper .right input {
+  width: 70%;
+  padding: 21px 30px;
+  color: #676666;
+  font-size: 14px;
+  border-radius: 10px 10px 35px 10px;
+  border: none;
+  height: 100%;
+  margin-right: 20px;
+}
+.subscribe .container .wrapper .right button {
+  height: 100%;
+  padding: 18px 30px;
+  border-radius: 35px 10px 10px 10px;
+  background-color: white;
+  color: orangered;
+  font-size: 20px;
+  border: none;
+  width: 30%;
+}
+.subscribe .container .tail {
+  width: 15%;
+  background-image: url("");
+}
+
+.vawyfourth {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape02.png");
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #F5F2EB;
+}
+
+.news {
+  width: 100%;
+}
+.news .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.news .header .imgWrapper {
+  width: 330px;
+  height: 400px;
+}
+.news .header .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news .header .head {
+  text-align: center;
+}
+.news .header .head .paw {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  transform: translateX(-50%);
+  animation: waveAnimation 2s infinite;
+}
+.news .header .head .paw img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  20% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transition-duration: 0.6s;
+  }
+  60% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  80% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transition-duration: 0.6s;
+  }
+}
+.news .header .head span {
+  padding-top: 6px;
+  display: block;
+  font-size: 30px;
+  color: orangered;
+}
+.news .header .head h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.news .header .head p {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  color: gray;
+}
+.news .container {
+  width: 1200px;
+  margin: auto;
+}
+.news .container .card {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.news .container .card .imgWrapper {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background-color: red;
+}
+.news .container .card .imgWrapper img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  transition-duration: 1s;
+}
+.news .container .card .imgWrapper img:hover {
+  transform: scale(1.1);
+  height: auto;
+  transition-duration: 1s;
+}
+.news .container .card .imgWrapper button {
+  padding: 16px 23px;
+  color: orangered;
+  transition-duration: 0.5s;
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 8px;
+}
+.news .container .card .imgWrapper button .bookmark {
+  font-size: 20px;
+  color: orangered;
+  margin-right: 6px;
+  font-family: "Nunito", sans-serif;
+  transition-duration: 0.5s;
+}
+.news .container .card .imgWrapper button:hover {
+  color: black;
+  transition-duration: 0.5s;
+  background-color: orangered;
+}
+.news .container .card .imgWrapper button:hover .bookmark {
+  color: black;
+  transition-duration: 0.5s;
+}
+.news .container .card .details {
+  width: 100%;
+  padding-top: 16px;
+}
+.news .container .card .details div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #676666;
+  padding-bottom: 10px;
+}
+.news .container .card .details div span {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 12px;
+}
+.news .container .card .details div span .person {
+  font-size: 20px;
+  padding-right: 5px;
+}
+.news .container .card .details div p {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #676666;
+}
+.news .container .card .details div p .bell {
+  font-size: 20px;
+  padding-right: 5px;
+}
+.news .container .card .details h2 {
+  font-size: 25px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 10px;
+  transition-duration: 0.5s;
+}
+.news .container .card .details h2:hover {
+  color: orangered;
+  transition-duration: 0.5s;
+}
+.news .container .card .details .about {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #676666;
+  line-height: 28px;
+  max-height: 56px;
+  /* line-height * 3 */
+  overflow: hidden;
+  word-spacing: 1px;
+  text-overflow: -o-ellipsis-lastline;
+}
+.news .container .card .details a {
+  background-color: rgb(255, 255, 255);
+  color: orangered;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.news .container .card .details a img {
+  width: 20px;
+  height: 20px;
+  color: orangered;
+  margin-left: 8px;
+}/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.register {
+  background: white;
+  width: 100%;
+  padding: 20px 0;
+}
+.register .container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  background: #FDC635;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.register .container .sideImage {
+  width: 45%;
+}
+.register .container .sideImage .imgWrapper {
+  width: 100%;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+.register .container .sideImage .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.register .container .myForm {
+  border-radius: 10px;
+  width: 55%;
+  background: transparent;
+  padding: 40px;
+  text-align: center;
+  padding-right: 0;
+}
+.register .container .myForm h1 {
+  color: #F33F23;
+  padding-bottom: 20px;
+  font-weight: 900;
+  font-size: 40px;
+}
+.register .container .myForm Form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.register .container .myForm Form .left,
+.register .container .myForm Form .right {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+.register .container .myForm Form .left div,
+.register .container .myForm Form .right div {
+  height: 80px;
+}
+.register .container .myForm Form #name,
+.register .container .myForm Form #username,
+.register .container .myForm Form #password,
+.register .container .myForm Form #surname,
+.register .container .myForm Form #email,
+.register .container .myForm Form #balance,
+.register .container .myForm Form #city {
+  padding: 15px 0 15px 10px;
+  width: 260px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #EFEBEB;
+}
+.register .container .myForm Form div {
+  margin: 0;
+  padding-top: 10px;
+  color: red;
+  font-weight: 700;
+}
+.register .container .myForm Form .btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px !important;
+  padding: 0;
+  z-index: 2;
+}
+.register .container .myForm Form .btn button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  background-image: url("https://cdn.dribbble.com/users/706471/screenshots/3660311/sausage-dog-sniff-big-2.gif");
+  background-size: cover !important;
+  background-position: center;
+  padding: 25px 50px;
+}
+.register .container .myForm Form .btn #registerBtn {
+  background-image: url(" https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c5f0567578677.5d6db2757aed8.gif");
+}/*# sourceMappingURL=Register.css.map */

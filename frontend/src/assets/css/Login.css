@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  background: white;
+  width: 100%;
+  padding: 20px 0;
+}
+.login .container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  background: #79E099;
+  overflow: hidden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login .container .sideImage {
+  width: 45%;
+}
+.login .container .sideImage .imgWrapper {
+  width: 100%;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+.login .container .sideImage .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login .container .myForm {
+  border-radius: 10px;
+  width: 55%;
+  background: transparent;
+  padding: 40px;
+  text-align: center;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login .container .myForm h1 {
+  color: #F33F23;
+  padding-bottom: 20px;
+  font-weight: 900;
+  font-size: 40px;
+}
+.login .container .myForm Form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login .container .myForm Form div {
+  height: 80px;
+}
+.login .container .myForm Form #username,
+.login .container .myForm Form #password {
+  padding: 15px 0 15px 10px;
+  width: 260px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #EFEBEB;
+}
+.login .container .myForm Form div {
+  margin: 0;
+  padding-top: 10px;
+  color: red;
+  font-weight: 700;
+}
+.login .container .myForm Form .btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  z-index: 2;
+  width: 56%;
+}
+.login .container .myForm Form .btn button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/59e37cb0cd39c3506c632bc4/1553943129547-G5978IBDPUFX4MDZ1OIG/SatClub_dogloop.gif");
+  background-size: cover !important;
+  background-position: center;
+  padding: 25px 50px;
+}
+.login .container .myForm Form .btn #loginBtn {
+  background-image: url("https://cdn.dribbble.com/users/745319/screenshots/4202191/dog.gif");
+}/*# sourceMappingURL=Login.css.map */

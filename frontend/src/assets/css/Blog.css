@@ -1,0 +1,286 @@
+section.head {
+  width: 100%;
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/breadcrumb_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.head .wrapper {
+  width: 1200px;
+  margin: auto;
+  color: white;
+  padding: 100px 0;
+}
+section.head .wrapper h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 18px;
+  padding: 13px 40px 13px 20px;
+  background: #f04336;
+  border-radius: 15px 15px 40px 15px;
+  width: fit-content;
+}
+section.head .wrapper p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+section.head .wrapper p span {
+  color: orangered;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid orangered;
+}
+
+.blog {
+  width: 1005;
+  padding: 100px;
+}
+.blog .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.blog .container .left {
+  width: 70%;
+  background-color: #ffffff;
+  padding-right: 60px;
+}
+.blog .container .left .card {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.blog .container .left .card .imgWrapper {
+  width: 100%;
+  height: 490px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog .container .left .card .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog .container .left .card .detail {
+  width: 100%;
+  padding-top: 25px;
+}
+.blog .container .left .card .detail .headDate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #676666;
+  padding-bottom: 25px;
+}
+.blog .container .left .card .detail .headDate p {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 12px;
+}
+.blog .container .left .card .detail .headDate p .person,
+.blog .container .left .card .detail .headDate p .bookmark,
+.blog .container .left .card .detail .headDate p .bell {
+  font-size: 20px;
+  padding-right: 5px;
+}
+.blog .container .left .card .detail .headDate p .bookmark {
+  font-size: 23px;
+  color: orangered;
+}
+.blog .container .left .card .detail h1 {
+  font-size: 33px;
+  color: #0A303A;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 30px;
+  transition-duration: 0.5s;
+  line-height: 1.2;
+}
+.blog .container .left .card .detail h1:hover {
+  color: orangered;
+  transition-duration: 0.5s;
+}
+.blog .container .left .card .detail .info {
+  font-family: "Poppins", sans-serif !important;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #676666;
+}
+.blog .container .left .card .detail a {
+  background-color: rgb(255, 255, 255);
+  color: orangered;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+.blog .container .left .card .detail a img {
+  width: 20px;
+  height: 20px;
+  color: orangered;
+  margin-left: 8px;
+}
+.blog .container .left .card .detail .vawe {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/blog/blog_item_line.png");
+  height: 7px;
+  background-color: transparent;
+  background-size: cover;
+  margin-top: 30px;
+}
+.blog .container .right {
+  width: 30%;
+  background-color: #ffffff;
+}
+.blog .container .right .search {
+  background-color: #F4F2EB;
+  width: 100%;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.blog .container .right .search p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+.blog .container .right .search p h3 {
+  font-size: 20px;
+  color: #0A303A;
+  font-family: "Nunito", sans-serif;
+}
+.blog .container .right .search p span {
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.blog .container .right .search p span h5 {
+  width: 5px;
+  height: 25px;
+  background-color: orangered;
+  border-radius: 8px;
+}
+.blog .container .right .search p span :first-child {
+  margin: 0 4px 8px 10px;
+}
+.blog .container .right .search .input {
+  width: 100%;
+  height: fit-content;
+}
+.blog .container .right .search .input input {
+  width: 80%;
+  border-radius: 6px;
+  border: none;
+  padding: 20px 0 20px 20px;
+  font-size: 15px;
+}
+.blog .container .right .search .input button {
+  width: 20%;
+  background-color: orangered;
+  padding: 17px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+.blog .container .right .categories {
+  background-color: #F4F2EB;
+  width: 100%;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.blog .container .right .categories p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+.blog .container .right .categories p h3 {
+  font-size: 20px;
+  color: #0A303A;
+  font-family: "Nunito", sans-serif;
+}
+.blog .container .right .categories p span {
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.blog .container .right .categories p span h5 {
+  width: 5px;
+  height: 25px;
+  background-color: orangered;
+  border-radius: 8px;
+}
+.blog .container .right .categories p span :first-child {
+  margin: 0 4px 8px 10px;
+}
+.blog .container .right .categories .options {
+  list-style: none;
+}
+.blog .container .right .categories .options li {
+  font-size: 13px;
+  padding-bottom: 12px;
+  margin-bottom: 23px;
+  border-bottom: 1px dashed gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.blog .container .right .categories .options li .angle {
+  color: gray;
+}
+.blog .container .right .subscribeNewsletter {
+  background-color: #143556;
+  width: 100%;
+  padding: 35px 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+.blog .container .right .subscribeNewsletter .imgWrapper img {
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+.blog .container .right .subscribeNewsletter .inputs {
+  width: 100%;
+}
+.blog .container .right .subscribeNewsletter .inputs h1 {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 15px;
+}
+.blog .container .right .subscribeNewsletter .inputs p {
+  font-size: 15px;
+  color: white;
+  padding-bottom: 20px;
+}
+.blog .container .right .subscribeNewsletter .inputs input {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.blog .container .right .subscribeNewsletter .inputs button {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: orangered;
+  border-radius: 10px;
+  border: none;
+}/*# sourceMappingURL=Blog.css.map */

@@ -1,0 +1,219 @@
+section.head {
+  width: 100%;
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/breadcrumb_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.head .wrapper {
+  width: 1200px;
+  margin: auto;
+  color: white;
+  padding: 100px 0;
+}
+section.head .wrapper h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 18px;
+  padding: 13px 40px 13px 20px;
+  background: #f04336;
+  border-radius: 15px 15px 40px 15px;
+  width: fit-content;
+}
+section.head .wrapper p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+section.head .wrapper p span {
+  color: orangered;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid orangered;
+}
+
+.shop {
+  width: 1005;
+  padding: 100px;
+}
+.shop .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: space-between;
+}
+.shop .container .left {
+  width: 75%;
+  background-color: #a29191 !important;
+  padding-left: 60px;
+}
+.shop .container .left .card {
+  width: 100%;
+  background-color: #158fd0;
+}
+.shop .container .left .card .imgWrapper {
+  width: 100%;
+  height: 202px;
+  margin-bottom: 20px;
+  background-color: rgb(175, 50, 50);
+}
+.shop .container .left .card .imgWrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.shop .container .left .card .detail {
+  width: 100%;
+}
+.shop .container .left .card .detail span {
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #676666;
+  margin-bottom: 10px;
+}
+.shop .container .left .card .detail h3 {
+  font-family: "Nunito", sans-serif;
+  color: #0a303a;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.shop .container .left .card .detail .priceAdd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: red;
+}
+.shop .container .left .card .detail .priceAdd p {
+  font-size: 16px;
+  color: #282828;
+  font-weight: 600;
+  line-height: 1;
+  width: fit-content;
+}
+.shop .container .left .card .detail .priceAdd button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f04336;
+  display: block;
+  line-height: 1;
+}
+.shop .container .right {
+  width: 25%;
+  background-color: #ffffff;
+}
+.shop .container .right .search {
+  background-color: #F4F2EB;
+  width: 100%;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.shop .container .right .search p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+.shop .container .right .search p h3 {
+  font-size: 20px;
+  color: #0A303A;
+  font-family: "Nunito", sans-serif;
+}
+.shop .container .right .search p span {
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.shop .container .right .search p span h5 {
+  width: 5px;
+  height: 25px;
+  background-color: orangered;
+  border-radius: 8px;
+}
+.shop .container .right .search p span :first-child {
+  margin: 0 4px 8px 10px;
+}
+.shop .container .right .search .input {
+  width: 100%;
+  height: fit-content;
+}
+.shop .container .right .search .input input {
+  width: 80%;
+  border-radius: 6px;
+  border: none;
+  padding: 20px 0 20px 20px;
+  font-size: 15px;
+}
+.shop .container .right .search .input button {
+  width: 20%;
+  background-color: orangered;
+  padding: 17px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+.shop .container .right .categories {
+  background-color: #F4F2EB;
+  width: 100%;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.shop .container .right .categories p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 20px;
+}
+.shop .container .right .categories p h3 {
+  font-size: 20px;
+  color: #0A303A;
+  font-family: "Nunito", sans-serif;
+}
+.shop .container .right .categories p span {
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.shop .container .right .categories p span h5 {
+  width: 5px;
+  height: 25px;
+  background-color: orangered;
+  border-radius: 8px;
+}
+.shop .container .right .categories p span :first-child {
+  margin: 0 4px 8px 10px;
+}
+.shop .container .right .categories .options {
+  list-style: none;
+}
+.shop .container .right .categories .options li {
+  font-size: 13px;
+  padding-bottom: 12px;
+  margin-bottom: 23px;
+  border-bottom: 1px dashed gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.shop .container .right .categories .options li .angle {
+  color: gray;
+}
+.shop .container .right .rabbit {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/product/shop_add.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  padding: 35px 25px;
+  border-radius: 10px;
+}/*# sourceMappingURL=Shop.css.map */

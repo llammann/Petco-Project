@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #F4F1EA;
+  font-size: smaller;
+}
+.contact .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .container .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .container .left .phone {
+  padding-right: 8px;
+}
+.contact .container .left .opening {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.contact .container .left .opening span {
+  padding-left: 4px;
+}
+.contact .container .right {
+  width: 11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .container .right .icons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  background-color: transparent !important;
+}
+nav .navbar {
+  width: 100%;
+  padding: 25px 0;
+  background-color: white;
+  padding-bottom: 0;
+}
+nav .navbar .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .container .left {
+  width: 76%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .container .left .logo {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/logo/logo.png");
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 54px;
+}
+nav .navbar .container .left .options {
+  width: 80%;
+  font-weight: 800;
+  color: #0A303A;
+}
+nav .navbar .container .left .options ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+nav .navbar .container .left .options li a {
+  text-decoration: none;
+  font-size: large;
+  padding: 8px 18px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  transition: background-color 0.5s ease;
+}
+nav .navbar .container .left .options li:hover a {
+  box-sizing: border-box;
+  background-color: red;
+  color: white;
+}
+nav .navbar .container .left .options li.active a {
+  background-color: red;
+  color: white;
+}
+nav .navbar .container .right {
+  width: 23%;
+  border-left: 3px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .navbar .container .right button {
+  background-color: transparent;
+  border: none;
+}
+nav .navbar .container .right button .search {
+  font-size: 30px;
+}
+nav .navbar .container .right .bag {
+  font-size: 30px;
+}
+nav .navbar .container .right a {
+  text-decoration: none;
+}
+nav .navbar .container .right a p {
+  padding: 14px;
+  background-color: orangered;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s ease;
+}
+nav .navbar .container .right a p img {
+  width: 20px;
+  height: 20px;
+}
+nav .navbar .container .right a p:hover {
+  background-color: black;
+}
+nav .navbar .container .right a p span {
+  padding-right: 8px;
+}
+nav .vawy {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/header_shape.png") !important;
+  height: 55px;
+  background-position: center;
+  background-size: cover;
+  z-index: 999;
+  background-color: transparent !important;
+}/*# sourceMappingURL=Navbar.css.map */

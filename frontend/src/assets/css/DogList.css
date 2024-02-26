@@ -1,0 +1,558 @@
+.sticky {
+  background-color: orangered;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #000000;
+  position: fixed;
+  right: 60px;
+  z-index: 999;
+  border-radius: 8px;
+  bottom: 60px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(-100%);
+}
+
+section.head {
+  width: 100%;
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/breadcrumb_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.head .wrapper {
+  width: 1200px;
+  margin: auto;
+  color: white;
+  padding: 100px 0;
+}
+section.head .wrapper h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 18px;
+  padding: 13px 40px 13px 20px;
+  background: #f04336;
+  border-radius: 15px 15px 40px 15px;
+  width: fit-content;
+}
+section.head .wrapper p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+section.head .wrapper p span {
+  color: orangered;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid orangered;
+}
+
+.meetAnimals {
+  padding-bottom: 250px;
+}
+.meetAnimals .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meetAnimals .header .imgWrapper {
+  width: 330px;
+  height: 400px;
+}
+.meetAnimals .header .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.meetAnimals .header .head {
+  text-align: center;
+}
+.meetAnimals .header .head .paw {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  transform: translateX(-50%);
+  animation: waveAnimation 2s infinite;
+}
+.meetAnimals .header .head .paw img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  20% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transition-duration: 0.6s;
+  }
+  60% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  80% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transition-duration: 0.6s;
+  }
+}
+.meetAnimals .header .head span {
+  padding-top: 6px;
+  display: block;
+  font-size: 30px;
+  color: orangered;
+}
+.meetAnimals .header .head h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.meetAnimals .header .head p {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  color: gray;
+}
+.meetAnimals .animals .container {
+  width: 1200px;
+  margin: auto;
+}
+.meetAnimals .animals .container .grid {
+  row-gap: 180px;
+}
+.meetAnimals .animals .container .grid .card {
+  width: 100%;
+  position: relative;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper img {
+  width: 100%;
+  object-fit: cover;
+  transition-duration: 0.8s;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper .adoption {
+  display: none;
+  animation: titleAnimation 3s ease;
+  transition-duration: 1s;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover img {
+  opacity: 0.6;
+  transition-duration: 1s;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption {
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  transition-duration: 1s;
+  display: block;
+  position: absolute;
+  top: 150px;
+  margin: auto;
+  padding: 14px;
+  background-color: orangered;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.8s ease;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption img {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption:hover {
+  background-color: black;
+}
+.meetAnimals .animals .container .grid .card .imgWrapper:hover .adoption span {
+  padding-right: 8px;
+}
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+.meetAnimals .animals .container .grid .card .details {
+  position: absolute;
+  bottom: -35%;
+  right: 5%;
+  width: 90%;
+  margin: auto;
+  padding: 35px 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.meetAnimals .animals .container .grid .card .details .name {
+  padding-bottom: 15px;
+  margin: auto;
+  display: block;
+  color: orangered;
+  font-size: 22px;
+  width: fit-content;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #676666;
+  padding-bottom: 15px;
+  color: #676666;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left .icon,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right .icon {
+  font-size: 20px;
+  padding-right: 4px;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left .icon2,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right .icon2 {
+  font-size: 17px;
+}
+.meetAnimals .animals .container .grid .card .details .breedBirth .left span,
+.meetAnimals .animals .container .grid .card .details .breedBirth .right span {
+  font-size: 20px;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice .icons {
+  color: rgb(205, 184, 50);
+  font-size: 20px;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice .total {
+  font-size: 20px;
+  color: #676666;
+}
+.meetAnimals .animals .container .grid .card .details .starsPrice .total p span {
+  color: #0A303A;
+}
+
+.vawyfirst {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape01.png");
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #D5E6EB;
+}
+
+.questionAndHistory {
+  background-color: #D5E6EB;
+  padding: 250px 0;
+  width: 100%;
+  padding-bottom: 0;
+}
+.questionAndHistory .dog {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
+  margin: auto;
+}
+.questionAndHistory .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.questionAndHistory .container .left {
+  width: 50%;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+}
+.questionAndHistory .container .left .family {
+  width: 470px;
+  height: 380px;
+}
+.questionAndHistory .container .left .tv {
+  position: absolute;
+  bottom: 0;
+}
+.questionAndHistory .container .right {
+  width: 50%;
+}
+.questionAndHistory .container .right span {
+  color: orangered;
+  font-size: 20px;
+  padding-bottom: 15px;
+  display: block;
+}
+.questionAndHistory .container .right h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.questionAndHistory .container .right .accordions {
+  width: 100%;
+}
+
+.vawysec {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/testi_bg_shape02.png");
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  background-color: #D5E6EB !important;
+}
+
+.popularDogs {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.popularDogs .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popularDogs .header .imgWrapper {
+  width: 330px;
+  height: 400px;
+}
+.popularDogs .header .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popularDogs .header .head {
+  text-align: center;
+}
+.popularDogs .header .head .paw {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  transform: translateX(-50%);
+  animation: waveAnimation 2s infinite;
+}
+.popularDogs .header .head .paw img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  20% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transition-duration: 0.6s;
+  }
+  60% {
+    transform: rotate(0deg);
+    transition-duration: 0.6s;
+  }
+  80% {
+    transform: rotate(20deg);
+    transition-duration: 0.6s;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transition-duration: 0.6s;
+  }
+}
+.popularDogs .header .head span {
+  padding-top: 6px;
+  display: block;
+  font-size: 30px;
+  color: orangered;
+}
+.popularDogs .header .head h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.popularDogs .header .head p {
+  width: 80%;
+  font-size: 18px;
+  margin: auto;
+  color: gray;
+}
+.popularDogs .container {
+  width: 1200px;
+  margin: auto;
+  height: 420px;
+}
+.popularDogs .container .dogs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.popularDogs .container .dogs .swiper {
+  width: 100%;
+}
+.popularDogs .container .dogs .available {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding: 40px;
+  background-image: url("./../images//breed_services_bg.jpg");
+  background-size: cover;
+  color: white;
+  margin-left: 30px;
+  height: 100%;
+  width: 50%;
+}
+.popularDogs .container .dogs .available .breeder {
+  font-size: 20px;
+  border-left: 2px solid white;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: block;
+  padding-left: 10px;
+}
+.popularDogs .container .dogs .available h1 {
+  font-size: 40px;
+  padding-bottom: 18px;
+}
+.popularDogs .container .dogs .available p {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+.popularDogs .container .dogs .available button {
+  padding: 18px 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s ease;
+  width: 198px;
+}
+.popularDogs .container .dogs .available button img {
+  height: 20px;
+  width: 20%;
+  padding: 0;
+}
+.popularDogs .container .dogs .available button span {
+  font-size: 25px;
+  color: orangered;
+}
+.popularDogs .container .dogs .available button:hover {
+  background-color: black;
+}
+
+.subscribe {
+  width: 100%;
+  padding: 150px 0;
+}
+.subscribe .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe .container .wrapper {
+  width: 100%;
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/bg/newsletter_bg.jpg");
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border: 1px solid black;
+  margin: 0;
+}
+.subscribe .container .wrapper .left {
+  padding-right: 10px;
+}
+.subscribe .container .wrapper .left h1 {
+  font-size: 32px;
+  color: white;
+  padding-bottom: 15px;
+}
+.subscribe .container .wrapper .left div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.subscribe .container .wrapper .left div .icon {
+  padding-right: 4px;
+}
+.subscribe .container .wrapper .right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe .container .wrapper .right input {
+  width: 70%;
+  padding: 21px 30px;
+  color: #676666;
+  font-size: 14px;
+  border-radius: 10px 10px 35px 10px;
+  border: none;
+  height: 100%;
+  margin-right: 20px;
+}
+.subscribe .container .wrapper .right button {
+  height: 100%;
+  padding: 18px 30px;
+  border-radius: 35px 10px 10px 10px;
+  background-color: white;
+  color: orangered;
+  font-size: 20px;
+  border: none;
+  width: 30%;
+}
+.subscribe .container .tail {
+  width: 15%;
+  background-image: url("");
+}/*# sourceMappingURL=DogList.css.map */

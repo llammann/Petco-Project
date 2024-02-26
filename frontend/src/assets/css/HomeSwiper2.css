@@ -1,0 +1,76 @@
+.mySwiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 100% !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.swiper-wrapper {
+  height: 100% !important;
+  background-color: rgb(255, 255, 255) !important;
+  padding: 0;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide.first,
+.swiper-slide.secondd,
+.swiper-slide.third,
+.swiper-slide.fourth {
+  background-image: url("	https://themebeyond.com/pre/petco-prev/petco-live/img/images/breed_services_img01.jpg");
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  display: flex;
+  align-items: end;
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide.first a,
+.swiper-slide.secondd a,
+.swiper-slide.third a,
+.swiper-slide.fourth a {
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.swiper-slide.first a span,
+.swiper-slide.secondd a span,
+.swiper-slide.third a span,
+.swiper-slide.fourth a span {
+  color: orangered;
+  background-color: white;
+  padding: 6px 15px;
+  font-size: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.swiper-slide.secondd {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breed_services_img02.jpg");
+}
+
+.swiper-slide.third {
+  background-image: url("https://themebeyond.com/pre/petco-prev/petco-live/img/images/breed_services_img04.jpg");
+}
+
+.swiper-slide.fourth {
+  background-image: url("	https://themebeyond.com/pre/petco-prev/petco-live/img/images/breed_services_img03.jpg");
+}/*# sourceMappingURL=HomeSwiper2.css.map */
