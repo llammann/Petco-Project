@@ -171,10 +171,15 @@
 
                     #registerBtn {
                         background-color: #EFEBEB;
-                        font-size: 17px;
-                        font-family: "Nunito", sans-serif;
-                        font-weight: 700;
-                        color: #545C5E;
+
+                        .blogA {
+                            font-size: 17px;
+                            font-family: "Nunito", sans-serif;
+                            font-weight: 700;
+                            color: #545C5E;
+                            text-decoration: none;
+                            box-shadow: none;
+                        }
                     }
 
                     .loginBtn {

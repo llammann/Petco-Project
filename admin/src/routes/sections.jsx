@@ -20,6 +20,8 @@ export const DogsPage = lazy(() => import('src/pages/dogs'));
 export const AddDogPage = lazy(() => import('src/pages/addDog'));
 export const EditDogPage = lazy(() => import('src/pages/editDog'));
 
+export const MessagesPage = lazy(() => import('src/pages/Messages'));
+
 export const Page404 = lazy(() => import('src/pages/page-not-found'));
 
 // ----------------------------------------------------------------------
@@ -48,6 +50,7 @@ export default function Router() {
         { path: 'dogs', element: <DogsPage /> },
         { path: 'addDog', element: <AddDogPage /> },
         { path: 'editDog/:_id', element: <EditDogPage /> },
+        { path: 'messages', element: <MessagesPage /> },
       ],
     },
     {

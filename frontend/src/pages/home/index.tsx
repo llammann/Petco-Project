@@ -37,6 +37,7 @@ import {
   getAllPets,
   getAllNews,
   patchNews,
+  postEmail,
 } from "./../../redux/slices/PetSlice";
 
 export interface dogInt {
@@ -53,6 +54,8 @@ export interface dogInt {
 }
 import { newsInt } from "../blog";
 function Home({}: Props) {
+  const [emailValue, setemailValue] = useState("");
+
   function truncateContent(content: any, numLines: any) {
     const lines = content.split("\n");
     const truncatedContent = lines.slice(0, numLines).join("\n");
@@ -64,7 +67,11 @@ function Home({}: Props) {
     const options = { month: "short", day: "2-digit", year: "numeric" };
     return date.toLocaleDateString("en-US", options);
   }
-
+  interface UserrINter {
+    name: string;
+    surname: string;
+    // Add other properties as needed
+  }
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
@@ -604,8 +611,30 @@ function Home({}: Props) {
             </div>
 
             <div className="right">
-              <input type="text" placeholder="Enter Your Email..." />
-              <button>Subscribe</button>
+              <input
+                type="text"
+                placeholder="Enter Your Email..."
+                onChange={(e) => {
+                  setemailValue(e.target.value);
+                }}
+              />
+              <button
+                onClick={() => {
+                  const user: UserrINter = JSON.parse(
+                    localStorage.getItem("user") || "{}"
+                  );
+                  console.log("postEmail", user);
+                  dispatch(
+                    postEmail({
+                      name: user.name,
+                      surname: user.surname,
+                      email: emailValue,
+                    })
+                  );
+                }}
+              >
+                Subscribe
+              </button>
             </div>
           </div>
           <div className="tail">

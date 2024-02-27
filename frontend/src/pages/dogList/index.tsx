@@ -24,9 +24,11 @@ import Homeswiper2 from "../../components/Homeswiper2";
 
 import type { AppDispatch, RootState } from "./../../redux/store";
 import { useSelector, useDispatch } from "react-redux";
-import { getAllPets } from "./../../redux/slices/PetSlice";
+import { getAllPets, postEmail } from "./../../redux/slices/PetSlice";
 import { dogInt } from "../home";
 function DogList({}: Props) {
+
+  const [emailValue, setemailValue] = useState("");
 
   
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -268,8 +270,26 @@ function DogList({}: Props) {
             </div>
 
             <div className="right">
-              <input type="text" placeholder="Enter Your Email..." />
-              <button>Subscribe</button>
+              <input type="text" placeholder="Enter Your Email..." 
+                onChange={(e) => {
+                  setemailValue(e.target.value);
+                }}
+              />
+              <button
+                onClick={() => {
+                  const user: any = JSON.parse(
+                    localStorage.getItem("user") || "{}"
+                  );
+                  console.log("postEmail", user);
+                  dispatch(
+                    postEmail({
+                      name: user.name,
+                      surname: user.surname,
+                      email: emailValue,
+                    })
+                  );
+                }}
+              >Subscribe</button>
             </div>
           </div>
           <div className="tail">

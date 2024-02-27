@@ -27,6 +27,16 @@ export const getAllProducts = createAsyncThunk(
 );
 
 //DELETE DATA
+export const deleteEmail = createAsyncThunk(
+  "pet/deleteEmail",
+  async (emailId) => {
+    const response = await axios.delete(
+      `http://localhost:7070/emails/${emailId}`
+    );
+    return response.data;
+  }
+);
+
 export const deletePet = createAsyncThunk("pet/deletePet", async (petId) => {
   const response = await axios.delete(`http://localhost:7070/pets/${petId}`);
   return response.data;
@@ -52,6 +62,16 @@ export const deleteProduct = createAsyncThunk(
   }
 );
 //POST DATA
+export const postEmail = createAsyncThunk("pet/postEmail", async (newEmail) => {
+  const response = await axios.post("http://localhost:7070/emails", newEmail);
+  return response.data;
+});
+
+export const postMessage = createAsyncThunk("pet/postMessage", async (newMess) => {
+  const response = await axios.post("http://localhost:7070/messages", newMess);
+  return response.data;
+});
+
 export const postPet = createAsyncThunk("pet/postPet", async (newPet) => {
   const response = await axios.post("http://localhost:7070/pets", newPet);
   return response.data;

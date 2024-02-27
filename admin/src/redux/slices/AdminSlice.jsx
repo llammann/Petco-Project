@@ -3,6 +3,16 @@ import axios from 'axios';
 import { action } from 'src/theme/palette';
 
 // GET DATA
+export const getAllEmails = createAsyncThunk('admin/getAllMessages', async () => {
+  const response = await axios.get('http://localhost:7070/messages');
+  return response.data;
+});
+
+export const getAllMessages = createAsyncThunk('admin/getAllEmails', async () => {
+  const response = await axios.get('http://localhost:7070/messages');
+  return response.data;
+});
+
 export const getAllPets = createAsyncThunk('admin/getAllPets', async () => {
   const response = await axios.get('http://localhost:7070/pets');
   return response.data;
@@ -24,6 +34,17 @@ export const getAllProducts = createAsyncThunk('admin/getAllProducts', async () 
 });
 
 //DELETE DATA
+
+export const deleteEmail = createAsyncThunk('pet/deleteEmail', async (emailId) => {
+  const response = await axios.delete(`http://localhost:7070/emails/${emailId}`);
+  return response.data;
+});
+
+export const deleteMessage = createAsyncThunk('pet/deleteMessage', async (messId) => {
+  const response = await axios.delete(`http://localhost:7070/messages/${messId}`);
+  return response.data;
+});
+
 export const deletePet = createAsyncThunk('admin/deletePet', async (petId) => {
   const response = await axios.delete(`http://localhost:7070/pets/${petId}`);
   return response.data;
@@ -44,6 +65,12 @@ export const deleteProduct = createAsyncThunk('admin/deleteProduct', async (prod
   return response.data;
 });
 //POST DATA
+
+export const postEmail = createAsyncThunk('pet/postEmail', async (newEmail) => {
+  const response = await axios.post('http://localhost:7070/emails', newEmail);
+  return response.data;
+});
+
 export const postPet = createAsyncThunk('admin/postPet', async (newPet) => {
   const response = await axios.post('http://localhost:7070/pets', newPet);
   return response.data;
@@ -71,13 +98,10 @@ export const patchNews = createAsyncThunk('admin/patchNews', async ({ newsId, up
 });
 
 export const patchPet = createAsyncThunk('admin/patchPet', async ({ petId, updates }) => {
-  console.log(
-    "sliceeeeeee",petId,updates
-  )
+  console.log('sliceeeeeee', petId, updates);
 
   const response = await axios.patch(`http://localhost:7070/pets/${petId}`, updates);
   return response.data;
-
 });
 
 export const putUser = createAsyncThunk('admin/putUser', async ({ userId, newObj }) => {
@@ -103,6 +127,8 @@ const initialState = {
   dogs: [],
   products: [],
   news: [],
+  emails: [],
+  messages: [],
 };
 
 export const adminSlice = createSlice({
@@ -126,9 +152,16 @@ export const adminSlice = createSlice({
     handleDeletePet: (state, action) => {
       state.dogs = [...state.dogs.filter((dog) => dog._id !== action.payload)];
     },
+    handleDeleteMess: (state, action) => {
+      state.messages = [...state.messages.filter((mess) => mess._id !== action.payload)];
+    },
   },
 
   extraReducers: (builder) => {
+    builder.addCase(getAllEmails.fulfilled, (state, action) => {
+      state.emails = action.payload;
+    });
+
     builder.addCase(getAllPets.fulfilled, (state, action) => {
       state.dogs = action.payload;
       // console.log("state", state.data);
@@ -136,6 +169,10 @@ export const adminSlice = createSlice({
 
     builder.addCase(getAllUsers.fulfilled, (state, action) => {
       state.users = action.payload;
+    });
+
+    builder.addCase(getAllMessages.fulfilled, (state, action) => {
+      state.messages = action.payload;
     });
 
     builder.addCase(getAllNews.fulfilled, (state, action) => {
@@ -155,6 +192,10 @@ export const adminSlice = createSlice({
     builder.addCase(deleteUser.fulfilled, (state, action) => {
       state.users = state.users.filter((elem) => elem._id != action.payload);
       console.log('deleted user', state.users);
+    });
+
+    builder.addCase(deleteMessage.fulfilled, (state, action) => {
+      state.messages = state.messages.filter((elem) => elem._id != action.payload);
     });
 
     builder.addCase(deleteNews.fulfilled, (state, action) => {
@@ -189,7 +230,7 @@ export const adminSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { handleDeleteUser, handleDeleteProduct, handleDeleteNews, handleDeletePet } =
+export const { handleDeleteUser, handleDeleteProduct, handleDeleteNews, handleDeletePet,handleDeleteMess } =
   adminSlice.actions;
 
 export default adminSlice.reducer;

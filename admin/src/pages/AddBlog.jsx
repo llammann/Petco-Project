@@ -129,5 +129,3 @@ Register.propTypes = {
 };
 
 export default Register;
-
-// test

@@ -9,7 +9,15 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { postMessage } from "../../redux/slices/PetSlice";
 function Contacts({}: Props) {
+  const dispatch = useDispatch();
+  const [values, setvalues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [width, setWidth] = useState("");
   const scrollRef = useRef(null);
 
@@ -70,7 +78,9 @@ function Contacts({}: Props) {
                     <TiStarburst className="star" />
                   </sup>
                 </span>
-                <input type="text" placeholder="John Doe..." />
+                <input type="text" placeholder="John Doe..." onChange={(e)=>{
+                  setvalues({...values,name:e.target.value})
+                }}/>
               </div>
 
               <div className="email">
@@ -80,7 +90,9 @@ function Contacts({}: Props) {
                     <TiStarburst className="star" />
                   </sup>
                 </span>
-                <input type="email" placeholder="info.exampe@.com" />
+                <input type="email" placeholder="info.exampe@.com" onChange={(e)=>{
+                  setvalues({...values,email:e.target.value})
+                }}/>
               </div>
 
               <div className="message">
@@ -94,6 +106,9 @@ function Contacts({}: Props) {
                   name="message"
                   id="mess"
                   placeholder="Opinion..."
+                  onChange={(e)=>{
+                    setvalues({...values,message:e.target.value})
+                  }}
                 ></textarea>
               </div>
 
@@ -102,7 +117,16 @@ function Contacts({}: Props) {
                 <span>Don't show your email addres</span>
               </div>
 
-              <button>Send Now</button>
+              <button 
+              onClick={()=>{
+                dispatch(postMessage(values))
+                setvalues({
+                  name: "",
+                  email: "",
+                  message: "",
+                })
+              }}
+              >Send Now</button>
             </form>
           </div>
 

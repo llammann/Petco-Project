@@ -6,6 +6,8 @@ const PetRouter = require("./../backend/routers/PetRouters");
 const UserRouter = require("./routers/UserRouters");
 const NewsRouter = require("./routers/NewsRouter");
 const ProductRouter = require("./routers/ProductRouter");
+const EmailRouter = require("./routers/EmailRouter");
+const MessageRouter = require("./routers/MessageRouter");
 
 const bodyParser = require("body-parser");
 require("./config/db");
@@ -22,6 +24,8 @@ app.use("/", PetRouter);
 app.use("/", UserRouter);
 app.use("/", NewsRouter);
 app.use("/", ProductRouter);
+app.use("/", EmailRouter);
+app.use("/", MessageRouter);
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
