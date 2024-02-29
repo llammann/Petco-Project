@@ -129,6 +129,7 @@ const initialState = {
   news: [],
   emails: [],
   messages: [],
+  isLogged: false,
 };
 
 export const adminSlice = createSlice({
@@ -154,6 +155,9 @@ export const adminSlice = createSlice({
     },
     handleDeleteMess: (state, action) => {
       state.messages = [...state.messages.filter((mess) => mess._id !== action.payload)];
+    },
+    handeLogin: (state, action) => {
+      state.isLogged = action.payload;
     },
   },
 
@@ -230,7 +234,13 @@ export const adminSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { handleDeleteUser, handleDeleteProduct, handleDeleteNews, handleDeletePet,handleDeleteMess } =
-  adminSlice.actions;
+export const {
+  handleDeleteUser,
+  handleDeleteProduct,
+  handleDeleteNews,
+  handleDeletePet,
+  handleDeleteMess,
+  handeLogin,
+} = adminSlice.actions;
 
 export default adminSlice.reducer;

@@ -8,7 +8,7 @@ export default function NotificationsPopover() {
   const navigate = useNavigate();
   const notifications = useSelector((state) => state.admin.messages);
   const totalUnRead = notifications.filter((item) => item.isUnRead === true).length;
-
+  const isLogged = useSelector((state) => state.admin.isLogged);
   const handleClick = () => {
     navigate('/messages'); // Navigate to messages page when icon is clicked
   };

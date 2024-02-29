@@ -92,7 +92,7 @@ function Login() {
 
                   localStorage.setItem("user", JSON.stringify(foundUser));
                   navigate("/home");
-                  window.location.reload();
+                  // window.location.reload();
                   console.log("foundUser", foundUser);
                 } else {
                   swal("User not found");

@@ -12,13 +12,13 @@ import { useState } from "react";
 import SearchModal from "./../../components/SearchModal";
 import { MenuOutlined } from "@ant-design/icons";
 import { Button, Dropdown } from "antd";
-
+import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./../../assets/style/Navbar.scss";
 type Props = {};
 
 import { RootState } from "./../../redux/store";
-import { UseSelector, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import ProfilOffcanvas from "../../components/ProfilOffcanvas";
 import BasicMenu from "../../components/Menu";
 
@@ -131,6 +131,10 @@ function index({}: Props) {
   ];
 
   const Basket = useSelector((state: RootState) => state.pet.basket);
+  const [basketLength, setBasketLength] = useState(0);
+  useEffect(() => {
+    setBasketLength(Basket.length);
+  }, [Basket,JSON.parse(localStorage.getItem("user"))]);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const openSearchModal = () => {
     setIsSearchModalOpen(true);
@@ -248,7 +252,7 @@ function index({}: Props) {
                   <span className="spi">
                     <LiaShoppingBagSolid className="bag" />
                   </span>
-                  <sup>{Basket.length}</sup>
+                  <sup>{basketLength}</sup>
                 </Link>
 
                 <Link to="/adoption">

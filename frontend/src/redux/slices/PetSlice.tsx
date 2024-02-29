@@ -26,6 +26,14 @@ export const getAllProducts = createAsyncThunk(
   }
 );
 
+export const getAllMessages = createAsyncThunk(
+  "pet/getAllMessages",
+  async () => {
+    const response = await axios.get("http://localhost:7070/messages");
+    return response.data;
+  }
+);
+
 //DELETE DATA
 export const deleteEmail = createAsyncThunk(
   "pet/deleteEmail",
@@ -67,10 +75,16 @@ export const postEmail = createAsyncThunk("pet/postEmail", async (newEmail) => {
   return response.data;
 });
 
-export const postMessage = createAsyncThunk("pet/postMessage", async (newMess) => {
-  const response = await axios.post("http://localhost:7070/messages", newMess);
-  return response.data;
-});
+export const postMessage = createAsyncThunk(
+  "pet/postMessage",
+  async (newMess) => {
+    const response = await axios.post(
+      "http://localhost:7070/messages",
+      newMess
+    );
+    return response.data;
+  }
+);
 
 export const postPet = createAsyncThunk("pet/postPet", async (newPet) => {
   const response = await axios.post("http://localhost:7070/pets", newPet);
@@ -130,6 +144,7 @@ export interface PetState {
   products: object[];
   basket: object[];
   adopts: object[];
+  messages: object[];
 }
 
 // const userString = localStorage.getItem("user");
@@ -149,6 +164,7 @@ const initialState: PetState = {
   products: [],
   basket: getUserFromLocalStorage().basket || [],
   adopts: getUserFromLocalStorage().adopts || [],
+  messages: [],
 };
 
 export const petSlice = createSlice({
@@ -285,6 +301,10 @@ export const petSlice = createSlice({
 
     builder.addCase(getAllProducts.fulfilled, (state, action) => {
       state.products = action.payload;
+    });
+
+    builder.addCase(getAllMessages.fulfilled, (state, action) => {
+      state.messages = action.payload;
     });
 
     builder.addCase(deletePet.fulfilled, (state, action) => {

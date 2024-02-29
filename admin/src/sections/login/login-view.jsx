@@ -16,9 +16,10 @@ import { useNavigate } from 'react-router-dom';
 import { useRouter } from 'src/routes/hooks';
 
 import { bgGradient } from 'src/theme/css';
-
+import handleLogin from './../../redux/slices/AdminSlice';
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
+import { useDispatch } from 'react-redux';
 // ----------------------------------------------------------------------
 
 export default function LoginView() {
@@ -26,15 +27,17 @@ export default function LoginView() {
   const AdminPassword = 'LamanNazirli';
   const [passValue, setpassValue] = useState('');
   const [Logged, setLogged] = useState(false);
-
+  const dispatch = useDispatch();
   const router = useRouter();
 
   const handleLogin = () => {
     if (passValue == AdminPassword) {
+      dispatch(handleLogin(true));
       router.push('/dashboard');
       console.log('Welcome!');
     } else {
       router.push('/404');
+      dispatch(handleLogin(false));
     }
   };
   const theme = useTheme();
@@ -112,15 +115,14 @@ export default function LoginView() {
           }}
         >
           <Typography variant="h4">Sign in to Admin</Typography>
-          <Typography variant="h4" style={{textAlign:"center"}}>
+          <Typography variant="h4" style={{ textAlign: 'center' }}>
             <img
-            style={{width:"50%",height:"100%",margin:"auto"}}
+              style={{ width: '50%', height: '100%', margin: 'auto' }}
               src="https://lordicon.com/icons/wired/flat/44-avatar-user-in-circle.gif"
               alt=""
             />
           </Typography>
 
-        
           <Stack direction="row" spacing={2}>
             <Button
               fullWidth

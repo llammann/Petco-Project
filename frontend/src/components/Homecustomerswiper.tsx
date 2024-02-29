@@ -12,35 +12,71 @@ import "./../assets/style/Homecustomerswiper.scss";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-
+import { getAllMessages } from "../redux/slices/PetSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../redux/store";
+import { useEffect } from "react";
 export default function Homecustomerswiper() {
+  const dispatch = useDispatch<AppDispatch>();
+
+  useEffect(() => {
+    dispatch(getAllMessages());
+  }, []);
+
+  const messages = useSelector((state: RootState) => state.pet.messages);
+
   return (
     <>
-     <div className="custom">
-     <Swiper
-        slidesPerView={2}
-        spaceBetween={40}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-        breakpoints={{
-          1: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-        }}
-      >
-        <SwiperSlide>
+      <div className="custom">
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={40}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+          breakpoints={{
+            1: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          }}
+        >
+          {messages &&
+            messages.map((elem:any) => {
+              return (
+                <SwiperSlide>
+                  <div className="container">
+                    <div className="imgWrapper">
+                      <img src={avatar} alt="" />
+                    </div>
+
+                    <div className="details">
+                      <p className="comment">"{elem.message}"</p>
+                      <div className="who">
+                        <div className="name">
+                          <span>{elem.name}</span>
+                          <p>{elem.email}</p>
+                        </div>
+
+                        <ImQuotesLeft className="quotes" />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+
+          {/* <SwiperSlide>
           <div className="container">
             <div className="imgWrapper">
               <img src={avatar} alt="" />
@@ -62,125 +98,9 @@ export default function Homecustomerswiper() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <div className="container">
-            <div className="imgWrapper">
-              <img src={avatar} alt="" />
-            </div>
-
-            <div className="details">
-              <p className="comment">
-                "The best overall dog DNA test is Embark Breed & Health Kit
-                (view at Chewy), which provides you with a breed brwn and
-                information Most dogs"
-              </p>
-              <div className="who">
-                <div className="name">
-                  <span>Alessia Cara</span>
-                  <p>Google Ceo</p>
-                </div>
-
-                <ImQuotesLeft className="quotes" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="container">
-            <div className="imgWrapper">
-              <img src={avatar} alt="" />
-            </div>
-
-            <div className="details">
-              <p className="comment">
-                "The best overall dog DNA test is Embark Breed & Health Kit
-                (view at Chewy), which provides you with a breed brwn and
-                information Most dogs"
-              </p>
-              <div className="who">
-                <div className="name">
-                  <span>Alessia Cara</span>
-                  <p>Google Ceo</p>
-                </div>
-
-                <ImQuotesLeft className="quotes" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="container">
-            <div className="imgWrapper">
-              <img src={avatar} alt="" />
-            </div>
-
-            <div className="details">
-              <p className="comment">
-                "The best overall dog DNA test is Embark Breed & Health Kit
-                (view at Chewy), which provides you with a breed brwn and
-                information Most dogs"
-              </p>
-              <div className="who">
-                <div className="name">
-                  <span>Alessia Cara</span>
-                  <p>Google Ceo</p>
-                </div>
-
-                <ImQuotesLeft className="quotes" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="container">
-            <div className="imgWrapper">
-              <img src={avatar} alt="" />
-            </div>
-
-            <div className="details">
-              <p className="comment">
-                "The best overall dog DNA test is Embark Breed & Health Kit
-                (view at Chewy), which provides you with a breed brwn and
-                information Most dogs"
-              </p>
-              <div className="who">
-                <div className="name">
-                  <span>Alessia Cara</span>
-                  <p>Google Ceo</p>
-                </div>
-
-                <ImQuotesLeft className="quotes" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="container">
-            <div className="imgWrapper">
-              <img src={avatar} alt="" />
-            </div>
-
-            <div className="details">
-              <p className="comment">
-                "The best overall dog DNA test is Embark Breed & Health Kit
-                (view at Chewy), which provides you with a breed brwn and
-                information Most dogs"
-              </p>
-              <div className="who">
-                <div className="name">
-                  <span>Alessia Cara</span>
-                  <p>Google Ceo</p>
-                </div>
-
-                <ImQuotesLeft className="quotes" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-     </div>
+        </SwiperSlide> */}
+        </Swiper>
+      </div>
     </>
   );
 }
