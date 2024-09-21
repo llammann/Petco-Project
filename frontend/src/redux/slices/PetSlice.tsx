@@ -4,24 +4,24 @@ import axios from "axios";
 
 // GET DATA
 export const getAllPets = createAsyncThunk("pet/getAllPets", async () => {
-  const response = await axios.get("http://localhost:7070/pets");
+  const response = await axios.get("https://petsdbs.vercel.app/pets");
   return response.data;
 });
 
 export const getAllUsers = createAsyncThunk("pet/getAllUsers", async () => {
-  const response = await axios.get("http://localhost:7070/users");
+  const response = await axios.get("https://petsdbs.vercel.app/users");
   return response.data;
 });
 
 export const getAllNews = createAsyncThunk("pet/getAllNews", async () => {
-  const response = await axios.get("http://localhost:7070/news");
+  const response = await axios.get("https://petsdbs.vercel.app/news");
   return response.data;
 });
 
 export const getAllProducts = createAsyncThunk(
   "pet/getAllProducts",
   async () => {
-    const response = await axios.get("http://localhost:7070/products");
+    const response = await axios.get("https://petsdbs.vercel.app/products");
     return response.data;
   }
 );
@@ -29,7 +29,7 @@ export const getAllProducts = createAsyncThunk(
 export const getAllMessages = createAsyncThunk(
   "pet/getAllMessages",
   async () => {
-    const response = await axios.get("http://localhost:7070/messages");
+    const response = await axios.get("https://petsdbs.vercel.app/messages");
     return response.data;
   }
 );
@@ -39,24 +39,24 @@ export const deleteEmail = createAsyncThunk(
   "pet/deleteEmail",
   async (emailId) => {
     const response = await axios.delete(
-      `http://localhost:7070/emails/${emailId}`
+      `https://petsdbs.vercel.app/emails/${emailId}`
     );
     return response.data;
   }
 );
 
 export const deletePet = createAsyncThunk("pet/deletePet", async (petId) => {
-  const response = await axios.delete(`http://localhost:7070/pets/${petId}`);
+  const response = await axios.delete(`https://petsdbs.vercel.app/pets/${petId}`);
   return response.data;
 });
 
 export const deleteUser = createAsyncThunk("pet/deleteUser", async (userId) => {
-  const response = await axios.delete(`http://localhost:7070/users/${userId}`);
+  const response = await axios.delete(`https://petsdbs.vercel.app/users/${userId}`);
   return response.data;
 });
 
 export const deleteNews = createAsyncThunk("pet/deleteNews", async (newsId) => {
-  const response = await axios.delete(`http://localhost:7070/news/${newsId}`);
+  const response = await axios.delete(`https://petsdbs.vercel.app/news/${newsId}`);
   return response.data;
 });
 
@@ -64,14 +64,14 @@ export const deleteProduct = createAsyncThunk(
   "pet/deleteProduct",
   async (prodId) => {
     const response = await axios.delete(
-      `http://localhost:7070/prooducts/${prodId}`
+      `https://petsdbs.vercel.app/prooducts/${prodId}`
     );
     return response.data;
   }
 );
 //POST DATA
 export const postEmail = createAsyncThunk("pet/postEmail", async (newEmail) => {
-  const response = await axios.post("http://localhost:7070/emails", newEmail);
+  const response = await axios.post("https://petsdbs.vercel.app/emails", newEmail);
   return response.data;
 });
 
@@ -79,7 +79,7 @@ export const postMessage = createAsyncThunk(
   "pet/postMessage",
   async (newMess) => {
     const response = await axios.post(
-      "http://localhost:7070/messages",
+      "https://petsdbs.vercel.app/messages",
       newMess
     );
     return response.data;
@@ -87,17 +87,17 @@ export const postMessage = createAsyncThunk(
 );
 
 export const postPet = createAsyncThunk("pet/postPet", async (newPet) => {
-  const response = await axios.post("http://localhost:7070/pets", newPet);
+  const response = await axios.post("https://petsdbs.vercel.app/pets", newPet);
   return response.data;
 });
 
 export const postUser = createAsyncThunk("pet/postUser", async (newUser) => {
-  const response = await axios.post("http://localhost:7070/users", newUser);
+  const response = await axios.post("https://petsdbs.vercel.app/users", newUser);
   return response.data;
 });
 
 export const postNews = createAsyncThunk("pet/postNews", async (newNews) => {
-  const response = await axios.post("http://localhost:7070/news", newNews);
+  const response = await axios.post("https://petsdbs.vercel.app/news", newNews);
   return response.data;
 });
 
@@ -105,7 +105,7 @@ export const postProduct = createAsyncThunk(
   "pet/postProduct",
   async (newProd) => {
     const response = await axios.post(
-      "http://localhost:7070/products",
+      "https://petsdbs.vercel.app/products",
       newProd
     );
     return response.data;
@@ -117,7 +117,7 @@ export const patchNews = createAsyncThunk(
   async ({ newsId, updates }: { newsId: string; updates: any }) => {
     console.log("Updates:", updates);
     const response = await axios.patch(
-      `http://localhost:7070/news/${newsId}`,
+      `https://petsdbs.vercel.app/news/${newsId}`,
       updates
     );
     return response.data;
@@ -129,7 +129,7 @@ export const putUser = createAsyncThunk(
   async ({ userId, newObj }: { userId: string; newObj: any }) => {
     console.log("newObj:", newObj);
     const response = await axios.put(
-      `http://localhost:7070/users/${userId}`,
+      `https://petsdbs.vercel.app/users/${userId}`,
       newObj
     );
     return response.data;
